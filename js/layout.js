@@ -4,6 +4,29 @@
 ========================================= */
 
 (function () {
+  /* ---- GLOBAL ASSETS (loaded once per page) ---- */
+  const ensureAsset = (selector, createEl) => {
+    if (!document.querySelector(selector)) {
+      document.head.appendChild(createEl());
+    }
+  };
+
+  // Core stylesheet (in case a page forgets to include it)
+  ensureAsset('link[href="css/style.css"]', () => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'css/style.css';
+    return link;
+  });
+
+  // Sanity client CDN
+  ensureAsset('script[src*="sanityClient.min.js"]', () => {
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/@sanity/client@latest/dist/sanityClient.min.js';
+    s.defer = true;
+    return s;
+  });
+
   /* Detect current page for active nav link */
   const path = window.location.pathname.split('/').pop() || 'index.html';
 

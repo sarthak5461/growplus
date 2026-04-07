@@ -1,3 +1,10 @@
+// const client = sanityClient({
+//   projectId: '53co0xh4',
+//   dataset: 'production',
+//   useCdn: true,
+//   apiVersion: '2024-01-01'
+// });
+
 /* =========================================
    GROWPLUS+ — MAIN JAVASCRIPT
 ========================================= */
@@ -227,3 +234,19 @@ window.addEventListener('scroll', () => {
 
 /* ---- INIT ---- */
 document.addEventListener('DOMContentLoaded', () => { checkReveal(); runCounters(); });
+
+
+
+// Sanity CMS 
+
+// Home Page
+
+// client.fetch(`*[_type == "page" && slug.current == "homePage"][0]`)
+//   .then(data => {
+//     console.log(data);
+
+//     // Hero Section
+//     document.getElementById('hero-title').innerText = data.heroHeading;
+//     document.getElementById('hero-subtitle').innerText = data.heroSubheading;
+//   })
+//   .catch(err => console.error(err));

@@ -1,95 +1,13 @@
-<section style="padding:160px 5% 100px;display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;align-items:start;">
-  <div class="reveal-left">
-    <div class="eyebrow">Grow With Us</div>
-    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;margin-bottom:1.5rem;">Let's Build Something <em style="color:var(--red);">Extraordinary</em></h1>
-    <div class="red-line"></div>
-    <p class="body-text" style="margin-bottom:3rem;">Whether you're a startup ready to scale or an established brand seeking a breakthrough — we have the expertise and the track record to take you there.</p>
-
-    <div class="contact-detail"><div class="contact-icon">📞</div><div><div class="contact-label">Call Us</div><div class="contact-value">+91 – 9671718434</div></div></div>
-    <div class="contact-detail"><div class="contact-icon">✉️</div><div><div class="contact-label">Email Us</div><div class="contact-value">Info@growplused.com</div></div></div>
-    <div class="contact-detail"><div class="contact-icon">📍</div><div><div class="contact-label">Based In</div><div class="contact-value">Faridabad, Haryana, India</div></div></div>
-    <div class="contact-detail"><div class="contact-icon">🌐</div><div><div class="contact-label">Website</div><div class="contact-value">growplused.com</div></div></div>
-
-    <div style="margin-top:2.5rem;">
-      <div style="font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Follow Us</div>
-      <div style="display:flex;gap:10px;">
-        <a href="https://facebook.com"  class="social-link" target="_blank">f</a>
-        <a href="https://instagram.com" class="social-link" target="_blank">in</a>
-        <a href="https://linkedin.com"  class="social-link" target="_blank">Li</a>
-      </div>
-    </div>
-
-    <!-- QUICK STATS -->
-    <div style="margin-top:3rem;display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-      <div style="padding:1.5rem;background:var(--black2);border:1px solid var(--border);border-radius:10px;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--red);">24hr</div>
-        <div style="font-size:.75rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.08em;">Response Time</div>
-      </div>
-      <div style="padding:1.5rem;background:var(--black2);border:1px solid var(--border);border-radius:10px;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--red);">Free</div>
-        <div style="font-size:.75rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.08em;">Strategy Session</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="reveal-right">
-    <div class="form-wrap">
-      <h2 style="font-size:1.6rem;font-weight:400;margin-bottom:.5rem;">Free Strategy Session</h2>
-      <p style="color:var(--muted2);font-size:.88rem;font-weight:300;margin-bottom:2.5rem;">Tell us about your brand. We'll craft a custom growth plan within 48 hours.</p>
-      <form onsubmit="handleForm(event,'succ-contact')">
-        <div class="form-row">
-          <div class="form-group"><label>First Name</label><input type="text" placeholder="Rahul" required></div>
-          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Verma" required></div>
-        </div>
-        <div class="form-group"><label>Email Address</label><input type="email" placeholder="rahul@yourbrand.com" required></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 98765 43210"></div>
-        <div class="form-group"><label>Company / Brand Name</label><input type="text" placeholder="Your Brand Name" required></div>
-        <div class="form-group">
-          <label>Service Required</label>
-          <select required>
-            <option value="" disabled selected>Select a service...</option>
-            <option>Search Engine Optimization (SEO)</option>
-            <option>Performance Marketing</option>
-            <option>Social Media Marketing</option>
-            <option>Brand Marketing</option>
-            <option>Influencer Marketing</option>
-            <option>Content Marketing</option>
-            <option>Multiple Services / Full Package</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Monthly Budget</label>
-          <select>
-            <option value="" disabled selected>Select budget range...</option>
-            <option>₹25,000 – ₹50,000</option>
-            <option>₹50,000 – ₹1,00,000</option>
-            <option>₹1,00,000 – ₹5,00,000</option>
-            <option>₹5,00,000+</option>
-          </select>
-        </div>
-        <div class="form-group"><label>Tell Us Your Goals</label><textarea placeholder="What are you looking to achieve? Current challenges? Target audience?" required></textarea></div>
-        <button type="submit" class="form-submit">Request Free Strategy Session →</button>
-        <div class="success-msg" id="succ-contact">✓ Received! We'll reach out within 24 hours with your custom growth plan.</div>
-      </form>
-    </div>
-  </div>
+<?php
+/**
+ * Contact section.
+ *
+ * @package GrowPlus_Custom
+ */
+?>
+<section class="home-contact section" id="contact">
+	<div class="container" style="padding:0 5% 80px;">
+		<h2 class="section-title"><?php esc_html_e( 'Contact', 'growplus-custom' ); ?></h2>
+		<p class="body-text"><?php esc_html_e( 'Ready to collaborate? Publish this page and replace this block with your preferred contact form plugin shortcode.', 'growplus-custom' ); ?></p>
+	</div>
 </section>
-
-<!-- FAQ on contact page -->
-<div class="divider"></div>
-<section class="section" style="background:var(--black2);">
-  <div style="text-align:center;max-width:580px;margin:0 auto 4rem;" class="reveal">
-    <div class="eyebrow" style="justify-content:center;">Before You Reach Out</div>
-    <h2 class="section-title">Common <em>Questions</em></h2>
-  </div>
-  <div style="max-width:760px;margin:0 auto;" class="reveal">
-    <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h4>How quickly can you launch a campaign?</h4><div class="faq-icon">+</div></div><div class="faq-a"><p>We typically launch campaigns within 48 hours of receiving all required assets and approvals. Our onboarding is streamlined to get you live faster than any traditional agency process.</p></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h4>Do you offer month-to-month contracts?</h4><div class="faq-icon">+</div></div><div class="faq-a"><p>Yes. While we recommend at least a 3-month commitment for SEO (to see meaningful results), all our services are available on flexible monthly arrangements. No lock-in, no hidden fees.</p></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h4>What information do you need to get started?</h4><div class="faq-icon">+</div></div><div class="faq-a"><p>Just fill out the form above. We'll schedule a free discovery call where we learn about your business, goals, and current challenges. From there, we'll build a custom proposal within 48 hours.</p></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><h4>Do you work with international brands?</h4><div class="faq-icon">+</div></div><div class="faq-a"><p>Yes. While we're based in India, we work with brands across South Asia, Southeast Asia, the Middle East, and the UK. Our team is comfortable managing campaigns across different time zones and markets.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<script src="js/main.js"></script>

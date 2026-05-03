@@ -1,25 +1,13 @@
-<section style="padding:160px 5% 100px;">
-  <div class="reveal-left" style="max-width:800px;">
-    <div class="eyebrow">What We Do</div>
-    <h1 class="section-title" style="font-size:clamp(3rem,8vw,7rem);">Full-Spectrum<br><em>Digital Marketing</em></h1>
-    <div class="red-line"></div>
-    <p class="body-text" style="max-width:560px;">Seven specialized services. One unified strategy. Built to dominate your market, compound your growth, and leave your competitors wondering what happened.</p>
-  </div>
+<?php
+/**
+ * Services section.
+ *
+ * @package GrowPlus_Custom
+ */
+?>
+<section class="home-services section" id="services">
+	<div class="container" style="padding:0 5%;">
+		<h2 class="section-title"><?php esc_html_e( 'Services', 'growplus-custom' ); ?></h2>
+		<p class="body-text"><?php esc_html_e( 'Add service items via ACF or custom fields in this section later.', 'growplus-custom' ); ?></p>
+	</div>
 </section>
-<div class="divider"></div>
-
-<section class="section">
-  <div style="display:flex;flex-direction:column;gap:0;">
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='seo.html'"><div class="process-num">01</div><div class="process-content"><h4>Search Engine Optimization (SEO)</h4><p>Rank higher on Google with proven technical SEO, content strategy, and authority link building that drives sustainable organic traffic month after month.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Technical SEO</span><span class="svc-tag" style="margin-bottom:0;">On-Page</span><span class="svc-tag" style="margin-bottom:0;">Link Building</span><span class="svc-tag" style="margin-bottom:0;">Local SEO</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='performance.html'"><div class="process-num">02</div><div class="process-content"><h4>Performance Marketing</h4><p>ROI-positive paid campaigns on Google, Meta, LinkedIn and beyond. Every rupee tracked, every conversion optimized, ROAS maximized relentlessly.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Google Ads</span><span class="svc-tag" style="margin-bottom:0;">Meta Ads</span><span class="svc-tag" style="margin-bottom:0;">YouTube Ads</span><span class="svc-tag" style="margin-bottom:0;">Retargeting</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='social.html'"><div class="process-num">03</div><div class="process-content"><h4>Social Media Marketing</h4><p>Platform-native content strategies that build genuine communities, grow followings, and convert engagement into real revenue across every major platform.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Instagram</span><span class="svc-tag" style="margin-bottom:0;">LinkedIn</span><span class="svc-tag" style="margin-bottom:0;">YouTube</span><span class="svc-tag" style="margin-bottom:0;">Twitter/X</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='affiliate.html'"><div class="process-num">04</div><div class="process-content"><h4>Affiliate Marketing</h4><p>Build a performance revenue channel through our publisher network. Pay only for results, scale without risk, and unlock a passive growth engine.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Publisher Network</span><span class="svc-tag" style="margin-bottom:0;">Commission Strategy</span><span class="svc-tag" style="margin-bottom:0;">Fraud Prevention</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='brand.html'"><div class="process-num">05</div><div class="process-content"><h4>Brand Marketing</h4><p>Build brand recognition so powerful that customers choose you before they even compare options. Brand is the ultimate long-term competitive moat.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Brand Strategy</span><span class="svc-tag" style="margin-bottom:0;">Visual Identity</span><span class="svc-tag" style="margin-bottom:0;">ORM</span><span class="svc-tag" style="margin-bottom:0;">PR</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='influencer.html'"><div class="process-num">06</div><div class="process-content"><h4>Influencer Marketing</h4><p>Authentic partnerships with vetted creators across nano, micro and macro tiers — brand-aligned, results-tracked, ROI-proven campaigns.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Nano Influencers</span><span class="svc-tag" style="margin-bottom:0;">Micro Influencers</span><span class="svc-tag" style="margin-bottom:0;">UGC Campaigns</span></div></div></div>
-    <div class="process-item reveal" style="cursor:pointer;" onclick="location.href='content.html'"><div class="process-num">07</div><div class="process-content"><h4>Content Marketing</h4><p>SEO-optimized content that attracts, educates, and converts your ideal customer — from long-form articles to viral social content and video production.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:1rem;"><span class="svc-tag" style="margin-bottom:0;">Blogs</span><span class="svc-tag" style="margin-bottom:0;">Video</span><span class="svc-tag" style="margin-bottom:0;">Newsletters</span><span class="svc-tag" style="margin-bottom:0;">Whitepapers</span></div></div></div>
-  </div>
-</section>
-
-<div class="cta-band"><h2>Not sure which services you <em>need</em>?</h2><a href="contact.html" class="btn-white">Get a Free Consultation</a></div>
-
-<script src="js/main.js"></script>

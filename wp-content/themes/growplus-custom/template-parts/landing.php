@@ -1,0 +1,174 @@
+<!-- HERO WITH FORM 1 -->
+<div class="lp-hero">
+  <div class="lp-hero-left">
+    <div class="eyebrow reveal">India's Elite Growth Partner · Since 2020</div>
+    <h1 class="hero-h1" style="font-size:clamp(3rem,7vw,7.5rem);">
+      <span class="line"><span class="word">Every</span></span>
+      <span class="line"><span class="word w2">Service</span> <span class="word w3" style="color:var(--red);font-style:italic;">You</span></span>
+      <span class="line"><span class="word w4">Need.</span></span>
+    </h1>
+    <p class="body-text reveal d1" style="max-width:520px;margin-top:2rem;">7 specialized digital marketing services. One integrated strategy. Built to dominate your market, compound your growth, and leave your competitors wondering what happened.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:2.5rem;" class="reveal d2">
+      <span class="svc-tag" style="margin-bottom:0;">🔍 SEO</span>
+      <span class="svc-tag" style="margin-bottom:0;">⚡ Performance</span>
+      <span class="svc-tag" style="margin-bottom:0;">📱 Social Media</span>
+      <span class="svc-tag" style="margin-bottom:0;">🔗 Affiliate</span>
+      <span class="svc-tag" style="margin-bottom:0;">🌐 Brand</span>
+      <span class="svc-tag" style="margin-bottom:0;">🤝 Influencer</span>
+      <span class="svc-tag" style="margin-bottom:0;">✍️ Content</span>
+    </div>
+    <div style="margin-top:3rem;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;" class="reveal d3">
+      <div style="padding:1.25rem;background:var(--black2);border:1px solid var(--border);border-radius:10px;text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--red);">500+</div><div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Brands Scaled</div></div>
+      <div style="padding:1.25rem;background:var(--black2);border:1px solid var(--border);border-radius:10px;text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--red);">6.2×</div><div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Avg ROAS</div></div>
+      <div style="padding:1.25rem;background:var(--black2);border:1px solid var(--border);border-radius:10px;text-align:center;"><div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--red);">5yrs</div><div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;">Experience</div></div>
+    </div>
+  </div>
+
+  <div class="lp-hero-right">
+    <div style="width:100%;">
+      <div style="background:var(--red);color:#fff;padding:1rem 1.5rem;border-radius:8px;font-weight:700;font-size:.9rem;letter-spacing:.05em;text-align:center;margin-bottom:1.5rem;">🎁 FREE Growth Audit — Limited Spots</div>
+      <div class="form-wrap" style="padding:2rem;">
+        <h3 style="font-size:1.2rem;font-weight:400;margin-bottom:.5rem;">Claim Your Free Audit</h3>
+        <p style="color:var(--muted2);font-size:.82rem;margin-bottom:1.75rem;">No commitment. 100% actionable insights.</p>
+        <form onsubmit="handleForm(event,'succ-lp1')">
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full Name" required></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="work@yourbrand.com" required></div>
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+          <div class="form-group">
+            <label>I Need Help With</label>
+            <select required>
+              <option value="" disabled selected>Choose a service...</option>
+              <option>Search Engine Optimization (SEO)</option>
+              <option>Performance Marketing</option>
+              <option>Social Media Marketing</option>
+              <option>Brand Marketing</option>
+              <option>Influencer Marketing</option>
+              <option>Content Marketing</option>
+              <option>Complete Package</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Claim Free Audit →</button>
+          <div class="success-msg" id="succ-lp1">🎉 Booked! Your audit arrives within 48 hours.</div>
+          <p style="text-align:center;color:var(--muted);font-size:.72rem;margin-top:1rem;">✅ No commitment required · 100% free</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-track">
+  <div class="marquee-inner">
+    <div class="marquee-item"><span>SEO</span><div class="dot"></div><span>Performance Marketing</span><div class="dot"></div><span>Social Media</span><div class="dot"></div><span>Brand Marketing</span><div class="dot"></div><span>Influencer Marketing</span><div class="dot"></div><span>Content Marketing</span><div class="dot"></div><span>Affiliate Marketing</span><div class="dot"></div></div>
+    <div class="marquee-item"><span>SEO</span><div class="dot"></div><span>Performance Marketing</span><div class="dot"></div><span>Social Media</span><div class="dot"></div><span>Brand Marketing</span><div class="dot"></div><span>Influencer Marketing</span><div class="dot"></div><span>Content Marketing</span><div class="dot"></div><span>Affiliate Marketing</span><div class="dot"></div></div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="section">
+  <div class="stats-row reveal">
+    <div class="stat-item"><div class="stat-num"><span data-count="500">0</span><span class="stat-unit">+</span></div><div class="stat-label">Brands Scaled</div></div>
+    <div class="stat-item"><div class="stat-num"><span data-count="5">0</span><span class="stat-unit">yrs</span></div><div class="stat-label">Experience</div></div>
+    <div class="stat-item"><div class="stat-num"><span data-count="90">0</span><span class="stat-unit">%</span></div><div class="stat-label">Retention Rate</div></div>
+    <div class="stat-item"><div class="stat-num">6.2<span class="stat-unit">×</span></div><div class="stat-label">Avg ROAS</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="section" style="background:var(--black2);">
+  <div style="text-align:center;max-width:640px;margin:0 auto 5rem;" class="reveal">
+    <div class="eyebrow" style="justify-content:center;">All Services</div>
+    <h2 class="section-title">Everything You Need to<br><em>Dominate Online</em></h2>
+  </div>
+  <div class="card-grid reveal">
+    <div class="card-item" onclick="location.href='seo.html'" style="cursor:pointer;"><div class="card-number">01</div><div class="card-icon-wrap">🔍</div><h3>SEO</h3><p>Rank higher, drive organic traffic, build lasting authority.</p><div class="card-link">Explore →</div></div>
+    <div class="card-item d1" onclick="location.href='performance.html'" style="cursor:pointer;"><div class="card-number">02</div><div class="card-icon-wrap">⚡</div><h3>Performance Marketing</h3><p>ROI-positive paid campaigns. Every rupee tracked.</p><div class="card-link">Explore →</div></div>
+    <div class="card-item d2" onclick="location.href='social.html'" style="cursor:pointer;"><div class="card-number">03</div><div class="card-icon-wrap">📱</div><h3>Social Media</h3><p>Communities, content, and conversions across all platforms.</p><div class="card-link">Explore →</div></div>
+    <div class="card-item d3" onclick="location.href='affiliate.html'" style="cursor:pointer;"><div class="card-number">04</div><div class="card-icon-wrap">🔗</div><h3>Affiliate Marketing</h3><p>Pay for results only. Scale without risk.</p><div class="card-link">Explore →</div></div>
+    <div class="card-item d4" onclick="location.href='brand.html'" style="cursor:pointer;"><div class="card-number">05</div><div class="card-icon-wrap">🌐</div><h3>Brand Marketing</h3><p>Build undeniable brand recognition and authority.</p><div class="card-link">Explore →</div></div>
+    <div class="card-item d5" onclick="location.href='influencer.html'" style="cursor:pointer;"><div class="card-number">06</div><div class="card-icon-wrap">🤝</div><h3>Influencer Marketing</h3><p>Authentic creator partnerships. Measurable ROI.</p><div class="card-link">Explore →</div></div>
+  </div>
+  <div style="max-width:380px;margin:1rem auto 0;">
+    <div class="card-grid">
+      <div class="card-item" onclick="location.href='content.html'" style="cursor:pointer;"><div class="card-number">07</div><div class="card-icon-wrap">✍️</div><h3>Content Marketing</h3><p>Content that ranks, engages, and converts at scale.</p><div class="card-link">Explore →</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;">
+    <div class="reveal-left">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="section-title">From Day 1 to<br><em>Market Leader</em></h2>
+      <div class="red-line"></div>
+      <p class="body-text">Our proven 5-step process takes brands from where they are to where they want to be — faster than any traditional agency approach.</p>
+    </div>
+    <div class="reveal-right">
+      <div class="process-list">
+        <div class="process-item"><div class="process-num">01</div><div class="process-content"><h4>Discovery Call</h4><p>We deep-dive into your brand, goals, competition, and current digital footprint.</p></div></div>
+        <div class="process-item"><div class="process-num">02</div><div class="process-content"><h4>Free Growth Audit</h4><p>Comprehensive analysis with actionable gap identification and opportunity mapping.</p></div></div>
+        <div class="process-item"><div class="process-num">03</div><div class="process-content"><h4>Custom Strategy</h4><p>Your bespoke growth plan across the channels that matter most for your category.</p></div></div>
+        <div class="process-item"><div class="process-num">04</div><div class="process-content"><h4>Launch in 48hrs</h4><p>Campaign go-live within 48 hours. No long onboarding delays.</p></div></div>
+        <div class="process-item"><div class="process-num">05</div><div class="process-content"><h4>Optimize & Scale</h4><p>Continuous testing, learning, and scaling to compound results month on month.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:var(--black2);">
+  <div style="text-align:center;max-width:580px;margin:0 auto 4rem;" class="reveal">
+    <div class="eyebrow" style="justify-content:center;">Client Results</div>
+    <h2 class="section-title">They Grew.<br><em>You're Next.</em></h2>
+  </div>
+  <div class="testi-grid reveal">
+    <div class="testi-card"><div class="stars">★★★★★</div><p class="testi-text">"GrowPlus+ 10x'd our organic traffic in 8 months. They build growth machines, not just campaigns."</p><div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sanjay Patel</div><div class="testi-role">CEO, FreshCart India</div></div></div></div>
+    <div class="testi-card"><div class="stars">★★★★★</div><p class="testi-text">"ROAS went from 1.8× to 6.2× in 3 months. Absolutely phenomenal performance marketing team."</p><div class="testi-author"><div class="testi-avatar">N</div><div><div class="testi-name">Neha Kapoor</div><div class="testi-role">Founder, StyleHive</div></div></div></div>
+    <div class="testi-card"><div class="stars">★★★★★</div><p class="testi-text">"The influencer campaign generated ₹1.2Cr in sales in 2 weeks. Beyond every expectation."</p><div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Arjun Singh</div><div class="testi-role">CMO, BrewLab</div></div></div></div>
+  </div>
+</section>
+
+<!-- BOTTOM FORM (Form 2) -->
+<section class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;">
+    <div class="reveal-left">
+      <div class="eyebrow">Take Action Now</div>
+      <h2 class="section-title">Your Competition<br>Is Already <em>Here</em></h2>
+      <div class="red-line"></div>
+      <p class="body-text">Don't let them get further ahead. Every day without a growth strategy is ground lost. Book your free session now.</p>
+    </div>
+    <div class="reveal-right">
+      <div class="form-wrap">
+        <h3 style="font-size:1.3rem;font-weight:400;margin-bottom:.5rem;">Book Your Strategy Call</h3>
+        <p style="color:var(--muted2);font-size:.85rem;margin-bottom:2rem;">No sales pitch. Honest insights about your growth potential.</p>
+        <form onsubmit="handleForm(event,'succ-lp2')">
+          <div class="form-row">
+            <div class="form-group"><label>Name</label><input type="text" placeholder="Your Name" required></div>
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 XXXXX XXXXX" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="you@yourbrand.com" required></div>
+          <div class="form-group">
+            <label>What Do You Need?</label>
+            <select required>
+              <option value="" disabled selected>Select service...</option>
+              <option>Search Engine Optimization (SEO)</option>
+              <option>Performance Marketing</option>
+              <option>Social Media Marketing</option>
+              <option>Brand Marketing</option>
+              <option>Influencer Marketing</option>
+              <option>Content Marketing</option>
+              <option>Complete Package</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Book Free Strategy Call →</button>
+          <div class="success-msg" id="succ-lp2">✓ Confirmed! Our team calls within 2 business hours.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>

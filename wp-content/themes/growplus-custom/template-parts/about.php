@@ -1,0 +1,81 @@
+<section style="padding:160px 5% 100px;position:relative;overflow:hidden;">
+  <div style="position:absolute;right:-5%;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:20vw;font-weight:700;color:rgba(255,255,255,0.02);pointer-events:none;user-select:none;line-height:1;">5yrs</div>
+  <div class="reveal-left" style="max-width:760px;">
+    <div class="eyebrow">Who We Are</div>
+    <h1 class="section-title" style="font-size:clamp(3rem,8vw,7rem);">Built on Results.<br><em>Driven by Purpose.</em></h1>
+    <div class="red-line"></div>
+    <p class="body-text" style="max-width:600px;">Founded in 2020, GrowPlus+ was born from a conviction that brands deserve better than generic marketing. We set out to build India's most accountable, most data-driven, most results-focused digital agency.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;">
+  <div class="reveal-left">
+    <div class="eyebrow">Our Story</div>
+    <h2 class="section-title" style="font-size:clamp(2rem,4vw,3.5rem);">Five Years.<br><em>Infinite Impact.</em></h2>
+    <div class="red-line"></div>
+    <p class="body-text">We started as a small team of passionate marketers who were frustrated by the industry's obsession with vanity metrics. Likes don't pay salaries. Impressions don't grow businesses.</p>
+    <p class="body-text" style="margin-top:1rem;">So we built a different kind of agency — one obsessed with revenue, ROAS, and real measurable outcomes. Five years later, we've scaled 500+ brands, generated ₹50Cr+ in client revenue, and earned a reputation as India's most trusted growth partner.</p>
+  </div>
+  <div class="reveal-right">
+    <div class="why-grid">
+      <div class="why-card"><div class="why-num">01</div><h3>Excellence First</h3><p>We set the bar high for every deliverable and never settle for average results.</p></div>
+      <div class="why-card"><div class="why-num">02</div><h3>Innovation Always</h3><p>Testing tomorrow's strategies before they become today's best practices.</p></div>
+      <div class="why-card"><div class="why-num">03</div><h3>Partnership Mindset</h3><p>Your success is our success. We're invested in your growth, not just your budget.</p></div>
+      <div class="why-card"><div class="why-num">04</div><h3>Radical Transparency</h3><p>Real-time dashboards. No fluff reports. No smoke and mirrors. Ever.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AWARDS -->
+<section class="section" style="background:var(--black2);">
+  <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 4rem;">
+    <div class="eyebrow" style="justify-content:center;">Awards & Recognition</div>
+    <h2 class="section-title">Recognized by<br><em>the Industry</em></h2>
+  </div>
+  <div class="awards-row reveal">
+    <div class="award-card"><div class="award-icon">🏆</div><div class="award-title">Top Digital Agency — North India</div><div class="award-org">Digital Agency Network</div><div class="award-year">2025</div></div>
+    <div class="award-card"><div class="award-icon">⭐</div><div class="award-title">Best Performance Marketing Agency</div><div class="award-org">Marketing Excellence Awards</div><div class="award-year">2024</div></div>
+    <div class="award-card"><div class="award-icon">🥇</div><div class="award-title">Google Premier Partner</div><div class="award-org">Google India</div><div class="award-year">2023–25</div></div>
+    <div class="award-card"><div class="award-icon">🎖️</div><div class="award-title">Top 50 Growth Agencies India</div><div class="award-org">Inc. India</div><div class="award-year">2024</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- VALUES -->
+<section class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;">
+    <div class="reveal-left">
+      <div class="eyebrow">Our Values</div>
+      <h2 class="section-title" style="font-size:clamp(2rem,4vw,3.5rem);">What We<br><em>Stand For</em></h2>
+      <div class="red-line"></div>
+      <p class="body-text">These aren't aspirational values on a wall. They're the operating principles that guide every strategy, every campaign, and every client relationship.</p>
+    </div>
+    <div class="reveal-right" style="display:flex;flex-direction:column;gap:1.5rem;">
+      <div style="display:flex;gap:1.5rem;align-items:flex-start;padding:1.75rem;background:var(--black2);border:1px solid var(--border);border-radius:12px;transition:border-color .3s;" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='var(--border)'"><div style="width:44px;height:44px;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🎯</div><div><h4 style="font-size:1rem;font-weight:600;margin-bottom:.4rem;">Radical Accountability</h4><p class="body-text" style="font-size:.87rem;">We own every result. No excuses. No finger-pointing. Just solutions and forward momentum.</p></div></div>
+      <div style="display:flex;gap:1.5rem;align-items:flex-start;padding:1.75rem;background:var(--black2);border:1px solid var(--border);border-radius:12px;transition:border-color .3s;" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='var(--border)'"><div style="width:44px;height:44px;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🔬</div><div><h4 style="font-size:1rem;font-weight:600;margin-bottom:.4rem;">Data Over Opinion</h4><p class="body-text" style="font-size:.87rem;">Every recommendation we make is backed by analytics, testing, and evidence.</p></div></div>
+      <div style="display:flex;gap:1.5rem;align-items:flex-start;padding:1.75rem;background:var(--black2);border:1px solid var(--border);border-radius:12px;transition:border-color .3s;" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='var(--border)'"><div style="width:44px;height:44px;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🚀</div><div><h4 style="font-size:1rem;font-weight:600;margin-bottom:.4rem;">Relentless Improvement</h4><p class="body-text" style="font-size:.87rem;">We never stop optimizing. Every campaign is a learning opportunity.</p></div></div>
+      <div style="display:flex;gap:1.5rem;align-items:flex-start;padding:1.75rem;background:var(--black2);border:1px solid var(--border);border-radius:12px;transition:border-color .3s;" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='var(--border)'"><div style="width:44px;height:44px;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">🤝</div><div><h4 style="font-size:1rem;font-weight:600;margin-bottom:.4rem;">Client Success First</h4><p class="body-text" style="font-size:.87rem;">Your goals come before our convenience. We measure our success by your growth.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TEAM -->
+<section class="section" style="background:var(--black2);">
+  <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 4rem;"><div class="eyebrow" style="justify-content:center;">The Team</div><h2 class="section-title">The Minds<br><em>Behind the Magic</em></h2></div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="reveal">
+    <div class="card-item" style="text-align:center;padding:3rem 2rem;"><div style="width:80px;height:80px;border-radius:50%;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--red);margin:0 auto 1.5rem;">A</div><h3 style="font-size:1.5rem;margin-bottom:.25rem;">Aarav Sharma</h3><div style="color:var(--red);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;">Founder & CEO</div><p class="body-text" style="font-size:.85rem;">10 years of digital marketing expertise. Former growth head at two unicorn startups.</p></div>
+    <div class="card-item" style="text-align:center;padding:3rem 2rem;"><div style="width:80px;height:80px;border-radius:50%;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--red);margin:0 auto 1.5rem;">P</div><h3 style="font-size:1.5rem;margin-bottom:.25rem;">Priya Mehta</h3><div style="color:var(--red);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;">Head of Performance</div><p class="body-text" style="font-size:.85rem;">Managed ₹20Cr+ in ad spend. Specialist in multi-channel campaign optimization.</p></div>
+    <div class="card-item" style="text-align:center;padding:3rem 2rem;"><div style="width:80px;height:80px;border-radius:50%;background:var(--red-dim);border:1px solid rgba(200,16,46,0.3);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--red);margin:0 auto 1.5rem;">R</div><h3 style="font-size:1.5rem;margin-bottom:.25rem;">Rohan Gupta</h3><div style="color:var(--red);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;">SEO Director</div><p class="body-text" style="font-size:.85rem;">100+ websites ranked #1 on Google. Google-certified with 8 years of SEO mastery.</p></div>
+  </div>
+</section>
+
+<div class="cta-band"><h2>Ready to work with the <em>best</em>?</h2><a href="contact.html" class="btn-white">Let's Talk Growth</a></div>
+
+<script src="js/main.js"></script>

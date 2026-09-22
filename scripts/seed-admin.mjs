@@ -1,6 +1,9 @@
+import dns from "node:dns";
 import { MongoClient } from "mongodb";
 import bcrypt from "bcryptjs";
 import { loadEnv } from "./load-env.mjs";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 loadEnv();
 

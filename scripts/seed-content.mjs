@@ -1,3 +1,4 @@
+import dns from "node:dns";
 import { MongoClient } from "mongodb";
 import { loadEnv } from "./load-env.mjs";
 import {
@@ -16,6 +17,8 @@ import {
   updates,
   whyPoints,
 } from "../lib/data.js";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 loadEnv();
 
@@ -43,7 +46,14 @@ async function upsertMany(col, docs, uniqueKeys) {
     uniqueKeys.forEach((key) => {
       filter[key] = doc[key];
     });
-    await col.updateOne(filter, { $set: { ...doc, updatedAt: new Date() }, $setOnInsert: { createdAt: new Date() } }, { upsert: true });
+    await col.updateOne(
+      filter,
+      {
+        $set: { ...doc, updatedAt: new Date() },
+        $setOnInsert: { createdAt: new Date() },
+      },
+      { upsert: true },
+    );
   }
 }
 
@@ -94,7 +104,8 @@ async function main() {
     "home.cta.buttonText": "Get Your Free Strategy Session",
     "home.cta.buttonLink": "/contact",
     "home.trustedClients.eyebrow": "Trusted By",
-    "home.trustedClients.body": "Brands across industries trust GrowPlus+ to drive their digital growth.",
+    "home.trustedClients.body":
+      "Brands across industries trust GrowPlus+ to drive their digital growth.",
     "home.trustedClients.logos": partners.map((name) => ({ name })),
   };
 
@@ -106,7 +117,11 @@ async function main() {
   ];
 
   for (const [key, value] of Object.entries(entries)) {
-    await blocks.updateOne({ key }, { $set: { key, value, updatedAt: new Date() } }, { upsert: true });
+    await blocks.updateOne(
+      { key },
+      { $set: { key, value, updatedAt: new Date() } },
+      { upsert: true },
+    );
   }
 
   await db.collection("services").createIndex({ slug: 1 }, { unique: true });
@@ -115,7 +130,12 @@ async function main() {
 
   await upsertMany(
     db.collection("services"),
-    services.map((item, order) => ({ ...item, shortDescription: item.summary, enabled: true, order })),
+    services.map((item, order) => ({
+      ...item,
+      shortDescription: item.summary,
+      enabled: true,
+      order,
+    })),
     ["slug"],
   );
   await upsertMany(
@@ -131,17 +151,37 @@ async function main() {
   );
   await upsertMany(
     db.collection("case_studies"),
-    cases.map((item, order) => ({ ...item, description: item.body, image: item.emoji, enabled: true, order })),
+    cases.map((item, order) => ({
+      ...item,
+      description: item.body,
+      image: item.emoji,
+      enabled: true,
+      order,
+    })),
     ["title"],
   );
   await upsertMany(
     db.collection("faqs"),
-    faqs.map((item, order) => ({ ...item, question: item.q, answer: item.a, group: "home", enabled: true, order })),
+    faqs.map((item, order) => ({
+      ...item,
+      question: item.q,
+      answer: item.a,
+      group: "home",
+      enabled: true,
+      order,
+    })),
     ["q", "group"],
   );
   await upsertMany(
     db.collection("faqs"),
-    contactFaqs.map((item, order) => ({ ...item, question: item.q, answer: item.a, group: "contact", enabled: true, order })),
+    contactFaqs.map((item, order) => ({
+      ...item,
+      question: item.q,
+      answer: item.a,
+      group: "contact",
+      enabled: true,
+      order,
+    })),
     ["q", "group"],
   );
   await upsertMany(
@@ -156,7 +196,11 @@ async function main() {
   );
   await upsertMany(
     db.collection("updates"),
-    updates.map((item) => ({ ...item, status: "published", publishedAt: new Date() })),
+    updates.map((item) => ({
+      ...item,
+      status: "published",
+      publishedAt: new Date(),
+    })),
     ["slug"],
   );
 
@@ -170,8 +214,17 @@ async function main() {
     ...processSteps.map((item, order) => ({ ...item, kind: "process", order })),
   ];
   for (const doc of miscSeed) {
-    const filter = doc.name ? { kind: doc.kind, name: doc.name } : { kind: doc.kind, title: doc.title, num: doc.num };
-    await misc.updateOne(filter, { $set: { ...doc, updatedAt: new Date() }, $setOnInsert: { createdAt: new Date() } }, { upsert: true });
+    const filter = doc.name
+      ? { kind: doc.kind, name: doc.name }
+      : { kind: doc.kind, title: doc.title, num: doc.num };
+    await misc.updateOne(
+      filter,
+      {
+        $set: { ...doc, updatedAt: new Date() },
+        $setOnInsert: { createdAt: new Date() },
+      },
+      { upsert: true },
+    );
   }
 
   await client.close();

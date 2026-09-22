@@ -19,11 +19,16 @@ export default function Chrome({ site, children }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
+  const isAdmin = pathname.startsWith("/admin");
 
   useEffect(() => {
+    setOpen(false);
+    document.body.classList.toggle("admin-mode", isAdmin);
+    return () => document.body.classList.remove("admin-mode");
+  }, [pathname, isAdmin]);
+
+  useEffect(() => {
+    if (isAdmin) return undefined;
     const cur = document.getElementById("cursor");
     const ring = document.getElementById("cursor-ring");
     const spotlight = document.getElementById("spotlight");
@@ -212,9 +217,11 @@ export default function Chrome({ site, children }) {
       stopHero();
       cards.forEach((card) => card.removeEventListener("mousemove", onCard));
     };
-  }, [pathname]);
+  }, [pathname, isAdmin]);
 
   const isActive = (href) => pathname === href;
+
+  if (isAdmin) return children;
 
   return (
     <>

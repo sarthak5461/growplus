@@ -7,6 +7,7 @@ __pycache__/
 .env
 .env.local
 *.sqlite3
+backend/data/
 media/
 staticfiles/
 .venv/

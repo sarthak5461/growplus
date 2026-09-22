@@ -1,34 +1,28 @@
 # GrowPlus+
 
-Next.js (JavaScript) website with a free Python CMS: **Wagtail** on Django. Content from the original static site at [sarthak5461/growplus](https://github.com/sarthak5461/growplus) is rebuilt as routes and can be edited in Wagtail.
+Next.js website with a **Node.js** backend and a custom admin dashboard for editing frontend content.
 
 ## Stack
 
-- **Frontend:** Next.js App Router, JavaScript, original black / white / red design
-- **CMS:** Wagtail (open source, no paid plan). Edit copy, services, blog, FAQs, and capture leads
-- **API:** Django REST Framework at `http://127.0.0.1:8000/api/`
-- The site still renders from bundled fallback content if the CMS is not running
+- **Frontend:** Next.js App Router (JavaScript), original black / white / red design
+- **Backend:** Express + SQLite (`node:sqlite`)
+- **Admin:** `/admin` — login and edit services, blog, FAQs, site settings, and inbox
+
+The public site still falls back to bundled content if the API is not running.
 
 ## Run locally
 
-### 1. CMS (Python)
+### 1. Backend
 
 ```bash
-cd cms
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py seed_content
-python manage.py createsuperuser
-python manage.py runserver
-# Local default if you used the seeded setup: username `admin` / password `admin123` (change this)
+cd backend
+npm install
+npm run dev
 ```
 
-Wagtail admin: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+API: [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
-### 2. Website (Next.js)
+### 2. Website + admin
 
 ```bash
 cd frontend
@@ -36,16 +30,14 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+- Site: [http://localhost:3000](http://localhost:3000)
+- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
+- Login: `admin` / `admin123` (change after first run)
 
-`frontend/.env.local` points at `NEXT_PUBLIC_CMS_URL=http://127.0.0.1:8000`.
+`frontend/.env.local` should be `NEXT_PUBLIC_CMS_URL=http://127.0.0.1:4000`.
 
-## What editors can change
+## What you can edit
 
-In Wagtail snippets / settings:
-
-- Phone, email, location, tagline
-- Services, blog posts, updates, FAQs, team, case studies, testimonials
-- Incoming leads and newsletter subscribers (Inbox)
-
-Contact and landing forms POST to `/api/leads/`. Newsletter forms POST to `/api/newsletter/`.
+- Site settings (phone, email, location, tagline)
+- Services, blog, updates, FAQs, team, case studies, testimonials, tools, partners, awards
+- Contact leads and newsletter subscribers

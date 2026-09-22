@@ -2,15 +2,10 @@ node_modules/
 .next/
 out/
 dist/
-*.pyc
-__pycache__/
 .env
 .env.local
 *.sqlite3
 backend/data/
-media/
-staticfiles/
-.venv/
-venv/
+public/uploads/
 .DS_Store
 *.log
